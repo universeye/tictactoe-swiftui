@@ -8,9 +8,21 @@
 import SwiftUI
 
 struct ContentView: View {
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        LazyVGrid(
+            columns: [ GridItem(.adaptive(minimum: 100, maximum: 300), spacing: 16) ],
+            spacing: 16) {
+            
+            ForEach(0 ..< 9) { item in
+                CircleViewWithAni()
+                
+            }
+            
+            
+            
+        }
+        
     }
 }
 

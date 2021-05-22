@@ -11,6 +11,12 @@
 		BF6B04A02657F020002A9B4A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6B049F2657F020002A9B4A /* ContentView.swift */; };
 		BF6B04A22657F023002A9B4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF6B04A12657F023002A9B4A /* Assets.xcassets */; };
 		BF6B04A52657F023002A9B4A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF6B04A42657F023002A9B4A /* Preview Assets.xcassets */; };
+		BF6B04AD2657F0F9002A9B4A /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6B04AC2657F0F9002A9B4A /* CircleView.swift */; };
+		BF6B04AF2657F3DE002A9B4A /* SFSymbols.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6B04AE2657F3DE002A9B4A /* SFSymbols.swift */; };
+		BF6B04B12657FA52002A9B4A /* LineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6B04B02657FA52002A9B4A /* LineView.swift */; };
+		BF6B04B326582807002A9B4A /* TrapezoidView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6B04B226582807002A9B4A /* TrapezoidView.swift */; };
+		BF6B04B526582A3C002A9B4A /* Line2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6B04B426582A3C002A9B4A /* Line2View.swift */; };
+		BF6B04B82658B81A002A9B4A /* CircleViewWithAni.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6B04B72658B81A002A9B4A /* CircleViewWithAni.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +26,12 @@
 		BF6B04A12657F023002A9B4A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BF6B04A42657F023002A9B4A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BF6B04A62657F023002A9B4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF6B04AC2657F0F9002A9B4A /* CircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
+		BF6B04AE2657F3DE002A9B4A /* SFSymbols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFSymbols.swift; sourceTree = "<group>"; };
+		BF6B04B02657FA52002A9B4A /* LineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineView.swift; sourceTree = "<group>"; };
+		BF6B04B226582807002A9B4A /* TrapezoidView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrapezoidView.swift; sourceTree = "<group>"; };
+		BF6B04B426582A3C002A9B4A /* Line2View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Line2View.swift; sourceTree = "<group>"; };
+		BF6B04B72658B81A002A9B4A /* CircleViewWithAni.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleViewWithAni.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +66,10 @@
 			children = (
 				BF6B049D2657F020002A9B4A /* tictactoeApp.swift */,
 				BF6B049F2657F020002A9B4A /* ContentView.swift */,
+				BF6B04B72658B81A002A9B4A /* CircleViewWithAni.swift */,
+				BF6B04AC2657F0F9002A9B4A /* CircleView.swift */,
+				BF6B04B626582BCA002A9B4A /* Shapes */,
+				BF6B04AE2657F3DE002A9B4A /* SFSymbols.swift */,
 				BF6B04A12657F023002A9B4A /* Assets.xcassets */,
 				BF6B04A62657F023002A9B4A /* Info.plist */,
 				BF6B04A32657F023002A9B4A /* Preview Content */,
@@ -67,6 +83,16 @@
 				BF6B04A42657F023002A9B4A /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BF6B04B626582BCA002A9B4A /* Shapes */ = {
+			isa = PBXGroup;
+			children = (
+				BF6B04B02657FA52002A9B4A /* LineView.swift */,
+				BF6B04B426582A3C002A9B4A /* Line2View.swift */,
+				BF6B04B226582807002A9B4A /* TrapezoidView.swift */,
+			);
+			path = Shapes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +164,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF6B04AF2657F3DE002A9B4A /* SFSymbols.swift in Sources */,
+				BF6B04AD2657F0F9002A9B4A /* CircleView.swift in Sources */,
 				BF6B04A02657F020002A9B4A /* ContentView.swift in Sources */,
+				BF6B04B82658B81A002A9B4A /* CircleViewWithAni.swift in Sources */,
+				BF6B04B526582A3C002A9B4A /* Line2View.swift in Sources */,
+				BF6B04B326582807002A9B4A /* TrapezoidView.swift in Sources */,
+				BF6B04B12657FA52002A9B4A /* LineView.swift in Sources */,
 				BF6B049E2657F020002A9B4A /* tictactoeApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
