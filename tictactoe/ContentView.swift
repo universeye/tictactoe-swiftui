@@ -7,20 +7,36 @@
 
 import SwiftUI
 
+
+
 struct ContentView: View {
     
+    @EnvironmentObject var circleVM: CircleVM
+    @State private var round: Int = 1
+    @State var botArray: Set<Int> = []
+    @State var playerArray: Set<Int> = []
+    
     var body: some View {
-        LazyVGrid(
-            columns: [ GridItem(.adaptive(minimum: 100, maximum: 300), spacing: 16) ],
-            spacing: 16) {
-            
-            ForEach(0 ..< 9) { item in
-                CircleViewWithAni()
+        VStack {
+            Spacer()
+            LazyVGrid(
+                columns: [ GridItem(.adaptive(minimum: 100, maximum: 300), spacing: 16) ]) {
+                
+                ForEach(0 ..< 9) { index in
+                    CircleViewWithAni(botArray: $botArray, playerArray: $playerArray, index: index, round: $round)
+                        .environmentObject(CircleVM())
+                    
+                }
+                
+                
                 
             }
-            
-            
-            
+            Spacer()
+            Button(action: {
+                circleVM.player = nil
+            }, label: {
+                Text("Replay")
+            })
         }
         
     }

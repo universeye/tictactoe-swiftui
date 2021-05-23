@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BF46F372265AC4640032626B /* CircleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF46F371265AC4640032626B /* CircleViewModel.swift */; };
 		BF6B049E2657F020002A9B4A /* tictactoeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6B049D2657F020002A9B4A /* tictactoeApp.swift */; };
 		BF6B04A02657F020002A9B4A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6B049F2657F020002A9B4A /* ContentView.swift */; };
 		BF6B04A22657F023002A9B4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF6B04A12657F023002A9B4A /* Assets.xcassets */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BF46F371265AC4640032626B /* CircleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleViewModel.swift; sourceTree = "<group>"; };
 		BF6B049A2657F020002A9B4A /* tictactoe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tictactoe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF6B049D2657F020002A9B4A /* tictactoeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tictactoeApp.swift; sourceTree = "<group>"; };
 		BF6B049F2657F020002A9B4A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -67,6 +69,7 @@
 				BF6B049D2657F020002A9B4A /* tictactoeApp.swift */,
 				BF6B049F2657F020002A9B4A /* ContentView.swift */,
 				BF6B04B72658B81A002A9B4A /* CircleViewWithAni.swift */,
+				BF46F371265AC4640032626B /* CircleViewModel.swift */,
 				BF6B04AC2657F0F9002A9B4A /* CircleView.swift */,
 				BF6B04B626582BCA002A9B4A /* Shapes */,
 				BF6B04AE2657F3DE002A9B4A /* SFSymbols.swift */,
@@ -170,6 +173,7 @@
 				BF6B04B82658B81A002A9B4A /* CircleViewWithAni.swift in Sources */,
 				BF6B04B526582A3C002A9B4A /* Line2View.swift in Sources */,
 				BF6B04B326582807002A9B4A /* TrapezoidView.swift in Sources */,
+				BF46F372265AC4640032626B /* CircleViewModel.swift in Sources */,
 				BF6B04B12657FA52002A9B4A /* LineView.swift in Sources */,
 				BF6B049E2657F020002A9B4A /* tictactoeApp.swift in Sources */,
 			);
