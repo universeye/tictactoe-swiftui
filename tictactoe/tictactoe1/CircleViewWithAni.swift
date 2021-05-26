@@ -12,12 +12,13 @@ import SwiftUI
 struct CircleViewWithAni: View {
     
     @EnvironmentObject var circleVM: CircleVM
+    var index: Int
     
     @Binding var botArray: Set<Int>
     @Binding var playerArray: Set<Int>
-    var index: Int
-    
     @Binding var round: Int
+    //@Binding var isGameOver: Bool
+    
     let winningFormula: [Int] = [0,1,2]
     
     var body: some View {
@@ -26,14 +27,16 @@ struct CircleViewWithAni: View {
                 CircleView(xorO: .circle)
             } else if circleVM.player == .human {
                 CircleView(xorO: .xmark)
-            } else {
+            } else if circleVM.player == .no {
                 CircleView()
                     .onTapGesture {
-                        
+
                         gameLogic()
-                        print("botArray: \(botArray)")
-                        print("player array: \(playerArray)")
-                        botArray.containss(1, 2, 0)
+                        print("botarray: \(botArray)")
+                        print("playerarray: \(playerArray)")
+                        if botArray.containss(winningFormula) {
+                            circleVM.setIsgameTrue()
+                        }
                     }
             }
         }
@@ -46,6 +49,7 @@ struct CircleViewWithAni: View {
             if (round % 2) == 1 {
                 circleVM.player = .bot
                 botArray.insert(index)
+                
             } else if (round % 2) == 0 {
                 circleVM.player = .human
                 playerArray.insert(index)
@@ -57,18 +61,23 @@ struct CircleViewWithAni: View {
 
 struct CircleViewWithAni_Previews: PreviewProvider {
     static var previews: some View {
-        CircleViewWithAni(botArray: .constant([45]), playerArray: .constant([4]), index: 3, round: .constant(4))
+        CircleViewWithAni(index: 3, botArray: .constant([]), playerArray: .constant([]), round: .constant(4))
             .previewLayout(.sizeThatFits)
     }
 }
 
 
 
+
+
+//MARK: - Extension
+
 extension Set {
     
-    func containss(_ int1: Int, _ int2: Int, _ int3: Int) {
-        if self.contains(int1 as! Element) && self.contains(int2 as! Element) && self.contains(int3 as! Element) {
-            print("Yes!")
+    func containss(_ int1: Array<Int>) -> Bool{
+        if self.contains(int1[0] as! Element) && self.contains(int1[1] as! Element) && self.contains(int1[2] as! Element) {
+            return true
         }
+        return false
     }
 }
