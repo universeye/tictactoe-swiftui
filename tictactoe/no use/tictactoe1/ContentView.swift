@@ -20,6 +20,7 @@ struct ContentView: View {
     
     var body: some View {
         ZStack {
+            Color.green.ignoresSafeArea()
             VStack {
                 Spacer()
                 
@@ -28,14 +29,14 @@ struct ContentView: View {
                     columns: [ GridItem(.adaptive(minimum: 100, maximum: 300), spacing: 16) ]) {
                     
                     ForEach(0 ..< 9) { index in
-//                        CircleViewWithAni(
-//                            index: index,
-//                            botArray: $botArray,
-//                            playerArray: $playerArray,
-//                            round: $round
-//                            )
-//                            .environmentObject(CircleVM())
-                        CircleView()
+                        CircleViewWithAni(
+                            index: index,
+                            botArray: $botArray,
+                            playerArray: $playerArray,
+                            round: $round
+                            )
+                            .environmentObject(CircleVM())
+                        
                     }
                     
                     

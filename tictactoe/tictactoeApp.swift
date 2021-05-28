@@ -11,7 +11,9 @@ import SwiftUI
 struct tictactoeApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView().environmentObject(CircleVM())
+            //ContentView().environmentObject(CircleVM())
+            //detailTransitionView().environmentObject(CircleVM())
+            tictactoev2View()
         }
     }
 }

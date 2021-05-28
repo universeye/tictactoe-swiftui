@@ -22,7 +22,10 @@ class CircleVM: ObservableObject {
     
     
     func setIsgameTrue() {
-        isGameOver = true
+        DispatchQueue.main.async {
+            self.isGameOver = true
+        }
+       
     }
    
     

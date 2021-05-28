@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		BF46F372265AC4640032626B /* CircleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF46F371265AC4640032626B /* CircleViewModel.swift */; };
+		BF6AA122265E06E0001CD2CF /* tictactoev2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6AA121265E06E0001CD2CF /* tictactoev2View.swift */; };
+		BF6AA124265E0C7C001CD2CF /* CircleView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6AA123265E0C7C001CD2CF /* CircleView2.swift */; };
+		BF6AA126266006D6001CD2CF /* tictactoev2Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6AA125266006D6001CD2CF /* tictactoev2Model.swift */; };
+		BF6AA1292660E5F6001CD2CF /* detailTransitionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6AA1272660E5F5001CD2CF /* detailTransitionView.swift */; };
+		BF6AA12A2660E5F6001CD2CF /* TurnView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6AA1282660E5F6001CD2CF /* TurnView.swift */; };
+		BF6AA12D2660E7EF001CD2CF /* Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6AA12C2660E7EF001CD2CF /* Alerts.swift */; };
 		BF6B049E2657F020002A9B4A /* tictactoeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6B049D2657F020002A9B4A /* tictactoeApp.swift */; };
 		BF6B04A02657F020002A9B4A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6B049F2657F020002A9B4A /* ContentView.swift */; };
 		BF6B04A22657F023002A9B4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF6B04A12657F023002A9B4A /* Assets.xcassets */; };
@@ -22,6 +28,12 @@
 
 /* Begin PBXFileReference section */
 		BF46F371265AC4640032626B /* CircleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleViewModel.swift; sourceTree = "<group>"; };
+		BF6AA121265E06E0001CD2CF /* tictactoev2View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tictactoev2View.swift; sourceTree = "<group>"; };
+		BF6AA123265E0C7C001CD2CF /* CircleView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleView2.swift; sourceTree = "<group>"; };
+		BF6AA125266006D6001CD2CF /* tictactoev2Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tictactoev2Model.swift; sourceTree = "<group>"; };
+		BF6AA1272660E5F5001CD2CF /* detailTransitionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = detailTransitionView.swift; sourceTree = "<group>"; };
+		BF6AA1282660E5F6001CD2CF /* TurnView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TurnView.swift; sourceTree = "<group>"; };
+		BF6AA12C2660E7EF001CD2CF /* Alerts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alerts.swift; sourceTree = "<group>"; };
 		BF6B049A2657F020002A9B4A /* tictactoe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tictactoe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF6B049D2657F020002A9B4A /* tictactoeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tictactoeApp.swift; sourceTree = "<group>"; };
 		BF6B049F2657F020002A9B4A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -47,6 +59,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BF6AA11F265E06BD001CD2CF /* tictactoe1 */ = {
+			isa = PBXGroup;
+			children = (
+				BF6B049F2657F020002A9B4A /* ContentView.swift */,
+				BF6B04B72658B81A002A9B4A /* CircleViewWithAni.swift */,
+				BF46F371265AC4640032626B /* CircleViewModel.swift */,
+				BF6B04AC2657F0F9002A9B4A /* CircleView.swift */,
+			);
+			path = tictactoe1;
+			sourceTree = "<group>";
+		};
+		BF6AA120265E06CE001CD2CF /* tictactoeV2 */ = {
+			isa = PBXGroup;
+			children = (
+				BF6AA121265E06E0001CD2CF /* tictactoev2View.swift */,
+				BF6AA125266006D6001CD2CF /* tictactoev2Model.swift */,
+				BF6AA12C2660E7EF001CD2CF /* Alerts.swift */,
+			);
+			path = tictactoeV2;
+			sourceTree = "<group>";
+		};
+		BF6AA12B2660E619001CD2CF /* no use */ = {
+			isa = PBXGroup;
+			children = (
+				BF6AA11F265E06BD001CD2CF /* tictactoe1 */,
+				BF6AA123265E0C7C001CD2CF /* CircleView2.swift */,
+				BF6AA1272660E5F5001CD2CF /* detailTransitionView.swift */,
+				BF6AA1282660E5F6001CD2CF /* TurnView.swift */,
+			);
+			path = "no use";
+			sourceTree = "<group>";
+		};
 		BF6B04912657F020002A9B4A = {
 			isa = PBXGroup;
 			children = (
@@ -67,12 +111,10 @@
 			isa = PBXGroup;
 			children = (
 				BF6B049D2657F020002A9B4A /* tictactoeApp.swift */,
-				BF6B049F2657F020002A9B4A /* ContentView.swift */,
-				BF6B04B72658B81A002A9B4A /* CircleViewWithAni.swift */,
-				BF46F371265AC4640032626B /* CircleViewModel.swift */,
-				BF6B04AC2657F0F9002A9B4A /* CircleView.swift */,
+				BF6AA120265E06CE001CD2CF /* tictactoeV2 */,
 				BF6B04B626582BCA002A9B4A /* Shapes */,
 				BF6B04AE2657F3DE002A9B4A /* SFSymbols.swift */,
+				BF6AA12B2660E619001CD2CF /* no use */,
 				BF6B04A12657F023002A9B4A /* Assets.xcassets */,
 				BF6B04A62657F023002A9B4A /* Info.plist */,
 				BF6B04A32657F023002A9B4A /* Preview Content */,
@@ -168,12 +210,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF6B04AF2657F3DE002A9B4A /* SFSymbols.swift in Sources */,
+				BF6AA12D2660E7EF001CD2CF /* Alerts.swift in Sources */,
+				BF6AA1292660E5F6001CD2CF /* detailTransitionView.swift in Sources */,
 				BF6B04AD2657F0F9002A9B4A /* CircleView.swift in Sources */,
+				BF6AA126266006D6001CD2CF /* tictactoev2Model.swift in Sources */,
 				BF6B04A02657F020002A9B4A /* ContentView.swift in Sources */,
+				BF6AA122265E06E0001CD2CF /* tictactoev2View.swift in Sources */,
 				BF6B04B82658B81A002A9B4A /* CircleViewWithAni.swift in Sources */,
 				BF6B04B526582A3C002A9B4A /* Line2View.swift in Sources */,
+				BF6AA124265E0C7C001CD2CF /* CircleView2.swift in Sources */,
 				BF6B04B326582807002A9B4A /* TrapezoidView.swift in Sources */,
 				BF46F372265AC4640032626B /* CircleViewModel.swift in Sources */,
+				BF6AA12A2660E5F6001CD2CF /* TurnView.swift in Sources */,
 				BF6B04B12657FA52002A9B4A /* LineView.swift in Sources */,
 				BF6B049E2657F020002A9B4A /* tictactoeApp.swift in Sources */,
 			);
