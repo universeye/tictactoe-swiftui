@@ -14,6 +14,7 @@
 		BF6AA1292660E5F6001CD2CF /* detailTransitionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6AA1272660E5F5001CD2CF /* detailTransitionView.swift */; };
 		BF6AA12A2660E5F6001CD2CF /* TurnView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6AA1282660E5F6001CD2CF /* TurnView.swift */; };
 		BF6AA12D2660E7EF001CD2CF /* Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6AA12C2660E7EF001CD2CF /* Alerts.swift */; };
+		BF6AA12F26611F38001CD2CF /* tictactoeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6AA12E26611F38001CD2CF /* tictactoeViewModel.swift */; };
 		BF6B049E2657F020002A9B4A /* tictactoeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6B049D2657F020002A9B4A /* tictactoeApp.swift */; };
 		BF6B04A02657F020002A9B4A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6B049F2657F020002A9B4A /* ContentView.swift */; };
 		BF6B04A22657F023002A9B4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF6B04A12657F023002A9B4A /* Assets.xcassets */; };
@@ -34,6 +35,7 @@
 		BF6AA1272660E5F5001CD2CF /* detailTransitionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = detailTransitionView.swift; sourceTree = "<group>"; };
 		BF6AA1282660E5F6001CD2CF /* TurnView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TurnView.swift; sourceTree = "<group>"; };
 		BF6AA12C2660E7EF001CD2CF /* Alerts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alerts.swift; sourceTree = "<group>"; };
+		BF6AA12E26611F38001CD2CF /* tictactoeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tictactoeViewModel.swift; sourceTree = "<group>"; };
 		BF6B049A2657F020002A9B4A /* tictactoe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tictactoe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF6B049D2657F020002A9B4A /* tictactoeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tictactoeApp.swift; sourceTree = "<group>"; };
 		BF6B049F2657F020002A9B4A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -74,6 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				BF6AA121265E06E0001CD2CF /* tictactoev2View.swift */,
+				BF6AA12E26611F38001CD2CF /* tictactoeViewModel.swift */,
 				BF6AA125266006D6001CD2CF /* tictactoev2Model.swift */,
 				BF6AA12C2660E7EF001CD2CF /* Alerts.swift */,
 			);
@@ -224,6 +227,7 @@
 				BF6AA12A2660E5F6001CD2CF /* TurnView.swift in Sources */,
 				BF6B04B12657FA52002A9B4A /* LineView.swift in Sources */,
 				BF6B049E2657F020002A9B4A /* tictactoeApp.swift in Sources */,
+				BF6AA12F26611F38001CD2CF /* tictactoeViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
